@@ -20,8 +20,9 @@ message VerifyWebhookRequest {
 message VerifyWebhookResponse {
   string tenant = 1;
   string deployer_sa = 2;
-  string ref = 3;
-  string path = 4;
+  string repo_url = 3;
+  string ref = 4;
+  string path = 5;
 
   oneof credential {
     GitHubAppCredential github_app = 10;
