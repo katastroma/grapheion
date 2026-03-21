@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package grapheion;
+
+option go_package = "github.com/katastroma/grapheion";
+
+// TenantService provides tenant management operations for the GitOps pipeline.
+service TenantService {
+  // VerifyWebhook verifies an HMAC signature against stored webhook secrets
+  // and returns the tenant's identity, tracking configuration, and repo
+  // credentials if verification succeeds.
+  rpc VerifyWebhook(VerifyWebhookRequest) returns (VerifyWebhookResponse);
+}
+
+message VerifyWebhookRequest {
+  bytes payload = 1;
+  string signature = 2;
+}
+
+message VerifyWebhookResponse {
+  string tenant = 1;
+  string deployer_sa = 2;
+  string ref = 3;
+  string path = 4;
+
+  oneof credential {
+    GitHubAppCredential github_app = 10;
+    BasicAuthCredential basic_auth = 11;
+  }
+}
+
+message GitHubAppCredential {
+  int64 app_id = 1;
+  int64 installation_id = 2;
+  string private_key = 3;
+}
+
+message BasicAuthCredential {
+  string username = 1;
+  string password = 2;
+}
