@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.1.1 - 2026-03-21
+#### Bug Fixes
+- (**ci**) include necessary build tools - (f4320eb) - Nathan Blair
+
+- - -
+
 ## 0.1.0 - 2026-03-21
 #### Features
 - initial release - (6005e6c) - Nathan Blair
