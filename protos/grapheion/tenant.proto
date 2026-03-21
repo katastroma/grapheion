@@ -24,10 +24,8 @@ message VerifyWebhookResponse {
   string ref = 4;
   string path = 5;
 
-  oneof credential {
-    GitHubAppCredential github_app = 10;
-    BasicAuthCredential basic_auth = 11;
-  }
+  GitHubAppCredential github_app = 10;
+  BasicAuthCredential basic_auth = 11;
 }
 
 message GitHubAppCredential {
