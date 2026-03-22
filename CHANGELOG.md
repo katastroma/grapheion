@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.1.4 - 2026-03-22
+#### Bug Fixes
+- tenant only cares about tenant things - (0340917) - Nathan Blair
+
+- - -
+
 ## 0.1.3 - 2026-03-21
 #### Bug Fixes
 - don't use oneof - (fffdba3) - Nathan Blair
