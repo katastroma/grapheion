@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.1.5 - 2026-03-22
+#### Bug Fixes
+- tenant is ONLY concerned with tenant operations, for realsies. - (e344cd0) - Nathan Blair
+#### Documentation
+- expand docs - (008ace1) - Nathan Blair
+
+- - -
+
 ## 0.1.4 - 2026-03-22
 #### Bug Fixes
 - tenant only cares about tenant things - (0340917) - Nathan Blair
