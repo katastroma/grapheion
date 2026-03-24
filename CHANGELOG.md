@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.2.0 - 2026-03-24
+#### Features
+- support buf for generating protos - (4cfcaa1) - Nathan Blair
+#### Miscellaneous Chores
+- go mod tidy - (827b966) - Nathan Blair
+
+- - -
+
 ## 0.1.5 - 2026-03-22
 #### Bug Fixes
 - tenant is ONLY concerned with tenant operations, for realsies. - (e344cd0) - Nathan Blair
