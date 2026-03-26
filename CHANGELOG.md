@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.2.1 - 2026-03-26
+#### Bug Fixes
+- (**cd**) cog handles CD trigger - (83b3149) - Nathan Blair
+
+- - -
+
 ## 0.2.0 - 2026-03-24
 #### Features
 - support buf for generating protos - (4cfcaa1) - Nathan Blair
